@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #001f3f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #001f3f;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+    nav a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: white; /* adjust as needed */
+  font-weight: 600;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* or any color you want */
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Aboutme.html" class="active">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Contact.html">Contact</a>
+      <a class="resume-button" href="resume.pdf" download style="background-color: #001f3f; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Download Resume</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Hi, I'm Nidhika</h2>
+    <p>Hi, I am Nidhika — a passionate web developer currently pursuing my Bachelor degree in Information Technology. I am in my second year of study, with a strong focus on front-end development and a deep interest in building clean, user-friendly, and functional websites.
+
+I enjoy creating digital experiences that are simple yet impactful. Writing clean code, designing intuitive layouts, and making websites responsive across all devices are things I genuinely love doing. My goal is always to ensure that users have a smooth, enjoyable experience when interacting with anything I build.
+
+With a solid foundation in HTML, CSS, and JavaScript, I am continuously exploring modern tools and frameworks like React to enhance my skills and stay updated with industry trends. I also have a growing interest in UI/UX design, which helps me better understand user needs and how to craft interfaces that are both visually appealing and effective.
+
+Beyond academics, I actively engage in self-learning through tutorials, coding challenges, and online communities. Every project I take on, whether for class or personal practice, is an opportunity to learn, grow, and push myself further as a developer.
+
+Looking ahead, I am excited to work on collaborative projects, explore internship opportunities, and contribute to open-source communities. I am committed to becoming a front-end developer who not only builds attractive websites but also delivers meaningful and functional digital experiences.
+
+Let's connect if you are looking for someone creative, driven, and always eager to learn more!
+
+</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nidhika Gupta | Portfolio Website</p>
+  </footer>
+</body>
+</html>

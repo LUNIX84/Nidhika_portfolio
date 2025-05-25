@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #001f3f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #001f3f;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    ul li a {
+      color: #001f3f;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+    nav a {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: white; /* adjust as needed */
+  font-weight: 600;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* or any color you want */
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="Aboutme.html">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Contact.html" class="active">Contact</a>
+      <a class="resume-button" href="resume.pdf" download style="background-color: #001f3f; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Download Resume</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Get in Touch</h2><br>
+    <p>Email: <a href="mailto:nidhikagupta@gmail.com">nidhikagupta@gmail.com</a></p><br>
+    <p>Social Media:</p><br>
+    <ul>
+      <li><a style="color: navy;" href="https://www.linkedin.com/in/nidhika-gupta-813a482aa/" target="_blank">LinkedIn_Nidhika</a></li><br>
+      <li><a style="color: navy;" href="https://github.com/LUNIX84" target="_blank">GitHub_Nidhika</a></li><br>
+      <li><a style="color: navy;" href="https://www.instagram.com/nidhika_47/" target="_blank">Instagram_Nidhika</a></li><br>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nidhika Gupta | Portfolio Website</p>
+  </footer>
+</body>
+</html>
